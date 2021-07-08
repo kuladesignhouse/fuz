@@ -484,14 +484,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   margin-top: 22px;
 }
 .sock-info h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
   margin: 0 0 0 36px;
 }
 .sock-info .sock-price {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -509,7 +509,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   margin: 0 0 4px;
 }
 .carousel-cell > .shopify-buy__product > .sock p {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: normal;
   font-size: 15px;
   line-height: 23px;
@@ -541,7 +541,7 @@ span.readmore-link {
   flex-direction: column;
   justify-content: flex-end;
 
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 700;
   font-size: 13px;
   line-height: 17px;
@@ -763,7 +763,7 @@ span.readmore-link.expand:after {
   height: 44px;
   box-sizing: border-box;
   margin: 0;
-  font-family: Proxima Nova;
+  font-family: proxima-nova;
   font-weight: 700;
   font-size: 13px;
   line-height: 17px;

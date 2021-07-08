@@ -132,7 +132,7 @@ nav .center-row > .menu svg {
 }
 .mobnavwrap .mobnav .mobnavin .menu > a:not(:nth-child(3n)) {
   text-decoration: none;
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 600;
   color: #212121;
   font-size: 18px;
@@ -147,7 +147,7 @@ nav .center-row > .menu a {
 }
 nav .center-row > .menu > a:not(:nth-child(3n)) {
   text-decoration: none;
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 600;
   color: #212121;
   font-size: 18px;
@@ -230,21 +230,21 @@ header #headerlogo {
   margin: 21px auto 0;
 }
 header h1 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin: 0;
 }
 header h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 800;
   font-size: 26px;
   line-height: 31px;
   margin: 13px 0 18px;
 }
 header h3 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -269,14 +269,14 @@ header h3 {
   align-items: flex-end;
 }
 #fuzz h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-size: 40px;
   line-height: 48px;
   color: #FFF;
   margin: 0 0 16px;
 }
 #fuzz a {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 800;
   font-size: 24px;
   color: #fff;
@@ -300,7 +300,7 @@ section.vibe {
   overflow-x: hidden;
 }
 section.vibe h1 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
@@ -331,7 +331,7 @@ section .about-item {
   position: relative;
 }
 section .about-item > p {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -378,7 +378,7 @@ section.trees {
   padding: 0 2em 2em;
 }
 section.trees h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -392,7 +392,7 @@ section.story-cont .about-item > img {
   height: 103px;
 }
 section.story-cont .about-item h3 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
@@ -403,7 +403,7 @@ section.story-cont .about-item h3 {
   max-width: 606px;
 }
 section.story-cont h1 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 600;
   font-size: 31px;
   line-height: 37px;
@@ -425,7 +425,7 @@ section.story-cont form div {
 }
 section.story-cont form div input[type="email"] {
   width: calc(100% - 162px);
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-weight: 400;
   font-size: 16px;
   padding-left: 15px;
@@ -436,7 +436,7 @@ section.story-cont form div input[type="submit"] {
   width: 162px;
   height: 52px;
   background-color: #D35100;
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-weight: 600;
   font-size: 20px;
   color: #f7f7f7;
@@ -445,20 +445,20 @@ section.story-cont form div input[type="submit"] {
   border-radius: 0;
 }
 section.story-cont form div ::-webkit-input-placeholder {
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-weight: 400;
   font-size: 16px;
   color: #a5a5a5;
 
 }
 section.story-cont form div :-ms-input-placeholder {
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-weight: 400;
   font-size: 16px;
   color: #a5a5a5;
 }
 section.story-cont form div ::placeholder {
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-weight: 400;
   font-size: 16px;
   color: #a5a5a5;
@@ -481,14 +481,14 @@ footer .center-row {
   box-sizing: border-box;
 }
 footer .foot-top h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 23px;
   line-height: 28px;
   margin: 28px 0 0px;
 }
 footer .foot-top input {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -508,13 +508,13 @@ footer .foot-top button {
   width: 108px;
   outline: none;
   border: none;
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
 }
 footer .foot-top h4 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -542,7 +542,7 @@ footer .center-row .foot-mid div a > div {
   visibility: visible !important;
 }
 footer .foot-mid h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 27px;
   line-height: 32px;
@@ -552,7 +552,7 @@ footer .foot-mid h2 {
   padding-bottom: 3px;
 }
 footer .foot-mid a {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 20px;
   margin: 0 0 19px;
@@ -570,7 +570,7 @@ footer .foot-bottom {
   padding: 20px 0 34px;
 }
 footer .foot-bottom span {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -581,7 +581,7 @@ footer .foot-bottom div {
   justify-content: space-between;
 }
 footer .foot-bottom a {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;

@@ -160,7 +160,7 @@ let firstLoop = true;
               "height": "39px",
               "box-sizing": "border-box",
               "margin" : "0",
-              "font-family": "Proxima Nova",
+              "font-family": "proxima-nova",
               "font-weight": "700",
               "font-size": "13px",
               "line-height": "17px",
