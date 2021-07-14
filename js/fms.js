@@ -352,8 +352,9 @@ let firstLoop = true;
           for (let i=0; i<sock.childNodes.length; i++) {
             if (sock.childNodes[i].className == "sock-info") {
               for (let x=0; x<sock.childNodes[i].childNodes.length; x++) {
-                if (sock.childNodes[i].childNodes[x].className == "sock-price") {                  
-                  let price = sock.childNodes[i].childNodes[x].innerText.substring(2, 5);
+                if (sock.childNodes[i].childNodes[x].className == "sock-price") {
+                  let price = sock.childNodes[i].childNodes[x].innerText;
+                  price = price.replace(/\.00$/,'');
                   sock.childNodes[i].childNodes[x].textContent = price;
                 }
               }        
