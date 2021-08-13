@@ -156,16 +156,26 @@ nav .center-row > .menu > a:not(:nth-child(3n)) {
   justify-content: center;
   width: 100%;
 }
-.menu > a#cart-wrap {
+a#cart-wrap {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-right: 10px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 43px;
+  width: 65px;
+  height: 65px;
+  border-radius: 0px 0px 7px 7px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  visibility: visible;
+  opacity: 1;
 }
-.menu > a#cart-wrap > div {
+a#cart-wrap > div {
   position: relative;
 }
-.menu > a#cart-wrap #cart-count {
+a#cart-wrap #cart-count {
   font-size: 14px;
   cursor: pointer;
   color: #fff;
@@ -181,22 +191,22 @@ nav .center-row > .menu > a:not(:nth-child(3n)) {
   left: 19px;
   opacity: 0;
 }
-.menu > a#cart-wrap #cart-count.dbldgts,
-.menu > a#cart-wrap #cart-count.notempty.dbldgts {
+a#cart-wrap #cart-count.dbldgts,
+a#cart-wrap #cart-count.notempty.dbldgts {
   height: 23px;
   width: 23px;
   border-radius: 11.5px;
   top: -6px;
   left: 19px;
 }
-.menu > a#cart-wrap #cart-count.notempty {
+a#cart-wrap #cart-count.notempty {
   opacity: 1;
   background-color: #D35100;
 }
 .shopify-buy-frame.shopify-buy-frame--toggle {
   padding: 0;
 }
-.menu > a#cart-wrap #cart-count shopify-buy__cart-toggle__count {
+a#cart-wrap #cart-count shopify-buy__cart-toggle__count {
   cursor: pointer;
 }
 header {
@@ -590,6 +600,13 @@ footer .foot-bottom a {
 section.newsletter {
   margin-bottom: 60px;
 }
+.fMLXJK.fMLXJK {
+  background-color: transparent !important;
+}
+.ieXDZx.ieXDZx.ieXDZx.ieXDZx.ieXDZx.ieXDZx,
+.ihwEzX.ihwEzX.ihwEzX.ihwEzX.ihwEzX.ihwEzX {
+  height: 52px !important;
+}
 @media screen and (min-width: 20.625rem) {
   section.trees {
     background-size: 270%; 
@@ -628,9 +645,6 @@ section.newsletter {
 @media screen and (min-width: 26.25rem) {
   section.trees {
     height: 355px;
-  }
-  .menu > a#cart-wrap {
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 27.8125rem) {
@@ -777,10 +791,20 @@ section.newsletter {
   nav .center-row > .menu > a:not(:nth-child(3n)) {
     margin-right: 48px;
   }
+  a#cart-wrap {
+    align-items: flex-start;
+    position: relative;
+    width: 75.5px;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-left: 75px;
+  }
   nav .center-row > .menu svg {
     margin-left: 20px;
   }
-  /*.menu > a#cart-wrap #cart-count { left: 39px; top: -8px; }*/
+  /*a#cart-wrap #cart-count { left: 39px; top: -8px; }*/
   nav .center-row > .menu a {
     height: 31.5px;
   }
