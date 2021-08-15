@@ -596,6 +596,9 @@ span.readmore-link.expand:after {
   .main-carousel {
     max-width: 70rem;
   }
+  .carousel-cell > .shopify-buy__product > .sock p { /* sock description font size for 1400px and up */
+    font-weight: 500;
+  }
 }
 @media screen and (min-width: 75rem) {
   .main-carousel {
@@ -618,6 +621,15 @@ span.readmore-link.expand:after {
   .main-carousel .carousel-cell:nth-child(3n),
   .main-carousel .carousel-cell:last-child {
     margin: 0;
+  }
+  .carousel-cell > .shopify-buy__product > .sock p { /* sock description font size for 1400px and up */
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+
+  .sock-info h2 { /* sock title font size for 1400px and up */
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 95rem) {
