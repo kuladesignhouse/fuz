@@ -605,6 +605,9 @@ body > footer > div.center-row > div.foot-top > div.klaviyo-form-SNsvu4.klaviyo-
   .main-carousel:after { /* disable Flickity for large devices */
     content: '';
   }
+  .main-carousel .carousel-cell:nth-child(3) {
+    width: 100%;
+  }
   .main-carousel .carousel-cell {
     max-width: 300px;
     padding: 40px 0 0 0;
