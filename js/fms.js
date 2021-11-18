@@ -179,7 +179,8 @@ let firstLoop = true;
           }
         },
         "text": {
-          "button": "Add to"
+          "button": "Add to",
+          "regularPriceAccessibilityLabel": "",
         },
         "templates": {
           "title": customTemplate,
@@ -287,7 +288,7 @@ let firstLoop = true;
           "button": btnTemplate2,
         },
         "text": {
-          "button": "Buy now"
+          "button": "Buy now",
         },
         //"toggles": [{node: document.getElementById("cart-wrap")}],
       },
@@ -298,7 +299,7 @@ let firstLoop = true;
               "margin-left": "-20px"
             }
           }
-        }
+        },
       },
       "option": {},
       "cart": {
@@ -392,9 +393,13 @@ let firstLoop = true;
         prevNextButtons: false,
         pageDots: false,
         setGallerySize: true,
-        watchCSS: true
+        watchCSS: true,
       });
-      
+
+      window.onresize = function() {
+        flkty.resize();
+      };
+
       flkty.on( 'scroll', function( progress ) {
         progress = Math.max( 0, Math.min( 1, progress ) );
         //document.querySelector('.progress-bar').style.width = progress * 100 + '%';
