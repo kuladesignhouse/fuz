@@ -437,7 +437,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .carousel-cell { height: 100%; }
 .flickity-slider {
-  width: 95%;
+  width: 82%;
 }
 .main-carousel:after { /* enable Flickity by default */
   content: 'flickity';
@@ -489,6 +489,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-size: 20px;
   line-height: 24px;
   margin: 0 0 0 36px;
+  white-space: nowrap;
 }
 .sock-info .sock-price {
   font-family: 'proxima-nova';
@@ -559,6 +560,42 @@ span.readmore-link:after {
 span.readmore-link.expand:after {
   content: "Read less";
 }
+.main-carousel .carousel-cell:first-child {
+  padding: 0 12px 0 24px;
+}
+.main-carousel .carousel-cell:nth-child(2) {
+  padding: 0 12px;
+}
+.main-carousel .carousel-cell:nth-child(3) {
+  padding: 0 24px 0 12px;
+  width: 125%;
+}
+input.needsclick {
+  height: 52px !important;
+}
+body > footer > div.center-row > div.foot-top > div.klaviyo-form-SNsvu4.klaviyo-form.form-version-cid-1 > div > form > div > div:nth-child(1) > div:nth-child(2) {
+  background-color: #212121 !important;
+}
+@media screen and (min-width: 23.75rem) {
+  .flickity-slider {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 27.5rem) {
+  .flickity-slider {
+    width: 87%;
+  }
+}
+@media screen and (min-width: 28.75rem) {
+  .flickity-slider {
+    width: 89%;
+  }
+}
+@media screen and (min-width: 28.75rem) {
+  .flickity-slider {
+    width: 89%;
+  }
+}
 @media screen and (min-width: 60rem) {
   .main-carousel {
     display: flex;
@@ -567,6 +604,9 @@ span.readmore-link.expand:after {
   }
   .main-carousel:after { /* disable Flickity for large devices */
     content: '';
+  }
+  .main-carousel .carousel-cell:nth-child(3) {
+    width: 100%;
   }
   .main-carousel .carousel-cell {
     max-width: 300px;
