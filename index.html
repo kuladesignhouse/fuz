@@ -50,9 +50,33 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2605343569611403&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<style>
+  .fixed-banner {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+    background: rgb(26,40,39);
+    background: linear-gradient(90deg, rgba(26,40,39,1) 0%, rgba(52,77,76,1) 44%, rgba(49,142,122,1) 100%);
+    padding: 10px;
+}
+
+.fixed-banner.cbp-af-header-shrink {
+	padding: 10px 0;
+}
+
+p.bf {
+  text-align: center;
+  font-size: 26px;
+  color: white;
+}
+</style>
 
 </head>
 <body>
+  <div class="fixed-banner cbp-af-header">
+    <p class="bf">Use <strong>BF25</strong> for 25% off your entire order!</p>
+  </div>
 <nav>
   <div class="center-row">
     <div class="mobnavwrap" onclick="openNav();">
