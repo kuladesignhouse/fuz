@@ -70,6 +70,31 @@ p.bf {
   font-size: 26px;
   color: white;
 }
+
+@media only screen and (max-width: 710px) {
+  .fixed-banner {
+    padding: 8px;
+    margin: 0 300px 0 30px;   
+    width: 300px;
+    border-radius: 0 0 10px 10px;
+  }
+  p.bf {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .fixed-banner {
+    padding: 8px;
+    margin: 0 200px 0 30px;
+    width: 200px;
+    border-radius: 0 0 10px 10px;
+    filter: drop-shadow(0px 1px 4px rgb(77, 77, 77));
+  }
+  p.bf {
+    font-size: 20px;
+  }
+}
 </style>
 
 </head>
