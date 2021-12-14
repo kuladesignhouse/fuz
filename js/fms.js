@@ -329,18 +329,21 @@ let firstLoop = true;
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       
       async function addToCartBtns(){
-        const carousel = document.querySelector('.main-carousel');
+        const vibeChooser = document.getElementById('vibeChooser');
+        const swiperWrap = document.createElement('div');
+        swiperWrap.className = 'swiper-wrapper';
         for(i=0;i<product_ids.length;i++){
-          let cell = document.createElement("div");
-          cell.className = "carousel-cell";
-          carousel.appendChild(cell);
+          let slide = document.createElement("div");
+          slide.className = "swiper-slide";
+          swiperWrap.appendChild(slide);
           ui.createComponent('product', { // add to cart btn
             id: product_ids[i]["id"],
-            node: cell,
+            node: slide,
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: add_to_cart_btn
           });
         }
+        vibeChooser.appendChild(swiperWrap);
         return;
       };
 
@@ -384,26 +387,29 @@ let firstLoop = true;
           }
         }
       };
-      
+
       makeButtons();
 
-      var flkty = new Flickity( ".main-carousel", {
-        cellAlign: 'left',
-        contain: true,
-        prevNextButtons: false,
-        pageDots: false,
-        setGallerySize: true,
-        watchCSS: true,
-      });
-
-      window.onresize = function() {
-        flkty.resize();
+      const breakpoint = window.matchMedia( '(min-width:60rem)' );
+      let swiper;
+      const breakpointChecker = function() {
+        if ( breakpoint.matches === true ) {
+            if ( swiper !== undefined ) swiper.destroy( true, true );
+            return;
+        } else if ( breakpoint.matches === false ) {
+            return enableSwiper();
+        }
       };
+      const enableSwiper = function() {
+        swiper = new Swiper ('#vibeChooser', {
+            slidesPerView: 1.175,
+            a11y: true,
+            grabCursor: true,
+        });
+      };
+      breakpoint.addListener(breakpointChecker);
+      breakpointChecker();
 
-      flkty.on( 'scroll', function( progress ) {
-        progress = Math.max( 0, Math.min( 1, progress ) );
-        //document.querySelector('.progress-bar').style.width = progress * 100 + '%';
-      });
       document.addEventListener('click', function (e) {
         if (!e.target.matches('.readmore-link') && !e.target.matches('.add-to-cart-btn')) return;
         //if (!e.target.matches('.readmore-link')) return;
