@@ -12,6 +12,7 @@ nav {
   bottom: 0;
   z-index: 999;
   width: 100%;
+  pointer-events: none;
 }
 _::-webkit-full-page-media, _:future, :root nav {
   margin: 0 0 60px;
@@ -796,6 +797,7 @@ section.newsletter {
     justify-content: center;
     /*margin: 10px 0 40px;*/
     position: relative;
+    pointer-events: all;
   }
   _::-webkit-full-page-media, _:future, :root nav {
     margin: 10px 0 80px;
